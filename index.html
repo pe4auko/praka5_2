@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #be4a4a5e;
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        margin: 10px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>П. Гольбах</button>
+    <button>Т. Шевченко</button>
+    <button>Д. Павличко</button>
+    <button>Л. Костенко</button>
+    <button>Т.Шевченко</button>
+    <script>
+      const quotes = [
+        "Де немає свободи, там немає і вітчизни.",
+        "В своїй хаті своя й правда, І сила, і воля.",
+        "Вітчизна — ось і альфа, і омега!",
+        "Нації вмирають не від інфаркту. Спочатку їм відбирає мову.",
+        "Нема на світі України, немає другого Дніпра.",
+      ];
+      document.querySelectorAll("button").forEach((el, i) => {
+        el.onclick = () => alert(quotes[i]);
+      });
+    </script>
+  </body>
+</html>
